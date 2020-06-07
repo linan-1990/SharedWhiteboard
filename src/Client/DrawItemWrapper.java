@@ -1,9 +1,8 @@
 /*
- * The University of Melbourne
- * COMP90015 Assignment 2 – Shared White Board
- * Author: Run Cao
- * Student ID: 614233
- *
+ * Description: Communication message wrapper about drawing
+ * Author: Nan Li
+ * Since 2020 May
+ * Contact: linan.lqq0@gmail.com
  * */
 
 package Client;
@@ -14,6 +13,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 import Remote.WhiteBoardMsgInterface;
+
 //wrap the drawing information messages as the communication protocol between server and client
 public class DrawItemWrapper extends UnicastRemoteObject implements WhiteBoardMsgInterface {
 	private static final long serialVersionUID = 1L;

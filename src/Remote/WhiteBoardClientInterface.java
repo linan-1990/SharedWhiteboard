@@ -1,9 +1,8 @@
 /*
- * The University of Melbourne
- * COMP90015 Assignment 2 – Shared White Board
- * Author: Run Cao
- * Student ID: 614233
- *
+ * Description: Interface of RMI on client side (implemented in StartClient.java)
+ * Author: Nan Li
+ * Since 2020 May
+ * Contact: linan.lqq0@gmail.com
  * */
 
 package Remote;
@@ -14,7 +13,7 @@ import java.rmi.RemoteException;
 
 
 public interface WhiteBoardClientInterface extends Remote {
-	public void drawBoard(WhiteBoardServerInterface RI) throws RemoteException;
+	public void drawBoard(WhiteBoardServerInterface server) throws RemoteException;
     public void sendMessage(String message) throws RemoteException;
     public boolean updateWithOthers(WhiteBoardMsgInterface msg) throws RemoteException;
     public String getName() throws RemoteException;

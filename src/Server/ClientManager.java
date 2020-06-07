@@ -1,9 +1,8 @@
 /*
- * The University of Melbourne
- * COMP90015 Assignment 2 – Shared White Board
- * Author: Run Cao
- * Student ID: 614233
- *
+ * Description: Client manager
+ * Author: Nan Li
+ * Since 2020 May
+ * Contact: linan.lqq0@gmail.com
  * */
 
 package Server;

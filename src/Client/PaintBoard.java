@@ -1,9 +1,8 @@
 /*
- * The University of Melbourne
- * COMP90015 Assignment 2 – Shared White Board
- * Author: Run Cao
- * Student ID: 614233
- *
+ * Description: The whiteboard component in the GUI
+ * Author: Nan Li
+ * Since 2020 May
+ * Contact: linan.lqq0@gmail.com
  * */
 
 package Client;
@@ -175,8 +174,8 @@ public class PaintBoard extends JComponent {
 	    	}
 	    });
 	}
- //The method for painting the shape on the white board. 
-// initialize the white board to synchronize with the manager's image when the client join the shared white board
+    //The method for painting the shape on the white board. 
+    // initialize the white board to synchronize with the manager's image when the client join the shared white board
 	protected void paintComponent(Graphics g) {
 		if (image == null) {
 			if (isManager) {
